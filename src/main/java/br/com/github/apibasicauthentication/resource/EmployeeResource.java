@@ -2,6 +2,7 @@ package br.com.github.apibasicauthentication.resource;
 
 import br.com.github.apibasicauthentication.entity.dto.EmployeeDto;
 import br.com.github.apibasicauthentication.service.EmployeeService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,14 +27,14 @@ public class EmployeeResource {
     }
 
     @PostMapping
-    public ResponseEntity<EmployeeDto> addEmployee(@RequestBody EmployeeDto employeeDto) {
+    public ResponseEntity<EmployeeDto> addEmployee(@RequestBody @Valid EmployeeDto employeeDto) {
         return ResponseEntity.ok(employeeService.addEmployee(employeeDto));
     }
 
     @PutMapping(path = "{id}")
     public ResponseEntity<EmployeeDto> updateEmployee(
             @PathVariable(name = "id") Long id,
-            @RequestBody EmployeeDto employeeDto) {
+            @RequestBody @Valid EmployeeDto employeeDto) {
         return ResponseEntity.ok(employeeService.updateEmployee(id, employeeDto));
     }
 
