@@ -12,7 +12,7 @@ public interface EmployeeService {
 
     EmployeeDto findById(Long id);
 
-    EmployeeDto updateEmployee(EmployeeDto employeeDto);
+    EmployeeDto updateEmployee(Long id, EmployeeDto employeeDto);
 
     void deleteById(Long id);
 
