@@ -1,6 +1,8 @@
 package br.com.github.apibasicauthentication.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -9,7 +11,9 @@ import java.io.Serializable;
  * A DTO for the {@link Employee} entity
  */
 
-@Data
+@Getter
+@ToString
+@RequiredArgsConstructor
 public class EmployeeDto implements Serializable {
 
     @Serial
