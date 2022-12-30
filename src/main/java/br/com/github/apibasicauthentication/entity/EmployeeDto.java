@@ -22,13 +22,13 @@ public class EmployeeDto implements Serializable {
     private final Long id;
     private final String firstName;
     private final String lastName;
-    private final String username;
+    private final String email;
 
     public EmployeeDto(Employee employee) {
         this.id = employee.getId();
         this.firstName = employee.getFirstName();
         this.lastName = employee.getLastName();
-        this.username = employee.getUsername();
+        this.email = employee.getEmail();
     }
 
 }

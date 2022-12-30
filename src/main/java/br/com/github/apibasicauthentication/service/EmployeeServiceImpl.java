@@ -58,7 +58,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private void fromDtoToEntity(EmployeeDto employeeDto, Employee employee) {
         employee.setFirstName(employeeDto.getFirstName());
         employee.setLastName(employeeDto.getLastName());
-        employee.setUsername(employeeDto.getUsername());
+        employee.setEmail(employeeDto.getEmail());
     }
 
 }

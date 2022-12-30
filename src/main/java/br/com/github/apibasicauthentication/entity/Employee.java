@@ -22,7 +22,7 @@ public class Employee {
     private Long id;
     private String firstName;
     private String lastName;
-    private String username;
+    private String email;
 
     @Override
     public boolean equals(Object o) {
