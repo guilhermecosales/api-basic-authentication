@@ -20,4 +20,11 @@ public class EmployeeDto implements Serializable {
     private final String lastName;
     private final String username;
 
+    public EmployeeDto(Employee employee) {
+        this.id = employee.getId();
+        this.firstName = employee.getFirstName();
+        this.lastName = employee.getLastName();
+        this.username = employee.getUsername();
+    }
+
 }
