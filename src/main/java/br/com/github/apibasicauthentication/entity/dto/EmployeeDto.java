@@ -1,5 +1,6 @@
-package br.com.github.apibasicauthentication.entity;
+package br.com.github.apibasicauthentication.entity.dto;
 
+import br.com.github.apibasicauthentication.entity.Employee;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;

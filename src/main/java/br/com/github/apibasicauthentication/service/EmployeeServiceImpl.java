@@ -1,7 +1,7 @@
 package br.com.github.apibasicauthentication.service;
 
 import br.com.github.apibasicauthentication.entity.Employee;
-import br.com.github.apibasicauthentication.entity.EmployeeDto;
+import br.com.github.apibasicauthentication.entity.dto.EmployeeDto;
 import br.com.github.apibasicauthentication.repository.EmployeeRepository;
 import br.com.github.apibasicauthentication.service.exception.NotFoundException;
 import jakarta.persistence.EntityNotFoundException;

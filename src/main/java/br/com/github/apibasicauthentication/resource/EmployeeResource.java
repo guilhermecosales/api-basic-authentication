@@ -1,6 +1,6 @@
 package br.com.github.apibasicauthentication.resource;
 
-import br.com.github.apibasicauthentication.entity.EmployeeDto;
+import br.com.github.apibasicauthentication.entity.dto.EmployeeDto;
 import br.com.github.apibasicauthentication.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

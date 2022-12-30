@@ -1,6 +1,6 @@
 package br.com.github.apibasicauthentication.service;
 
-import br.com.github.apibasicauthentication.entity.EmployeeDto;
+import br.com.github.apibasicauthentication.entity.dto.EmployeeDto;
 
 import java.util.List;
 
