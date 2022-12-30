@@ -30,8 +30,8 @@ public class EmployeeResource {
         return ResponseEntity.ok(employeeService.addEmployee(employeeDto));
     }
 
-    @PostMapping(path = "{id}")
-    public ResponseEntity<EmployeeDto> addEmployee(
+    @PutMapping(path = "{id}")
+    public ResponseEntity<EmployeeDto> updateEmployee(
             @PathVariable(name = "id") Long id,
             @RequestBody EmployeeDto employeeDto) {
         return ResponseEntity.ok(employeeService.updateEmployee(id, employeeDto));
