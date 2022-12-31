@@ -1,8 +1,9 @@
-package br.com.github.apibasicauthentication.service;
+package br.com.github.apibasicauthentication.service.impl;
 
 import br.com.github.apibasicauthentication.entity.Employee;
 import br.com.github.apibasicauthentication.entity.dto.EmployeeDto;
 import br.com.github.apibasicauthentication.repository.EmployeeRepository;
+import br.com.github.apibasicauthentication.service.EmployeeService;
 import br.com.github.apibasicauthentication.service.exception.NotFoundException;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
