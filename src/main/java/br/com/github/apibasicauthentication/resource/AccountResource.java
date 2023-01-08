@@ -3,6 +3,7 @@ package br.com.github.apibasicauthentication.resource;
 import br.com.github.apibasicauthentication.entity.dto.AccountDto;
 import br.com.github.apibasicauthentication.entity.dto.CreateAccountDto;
 import br.com.github.apibasicauthentication.service.AccountService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +25,7 @@ public class AccountResource {
     }
 
     @PostMapping
-    public ResponseEntity<AccountDto> createAccount(@RequestBody CreateAccountDto createAccountDto) {
+    public ResponseEntity<AccountDto> createAccount(@RequestBody @Valid CreateAccountDto createAccountDto) {
         AccountDto accountDto = accountService.createAccount(createAccountDto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")
