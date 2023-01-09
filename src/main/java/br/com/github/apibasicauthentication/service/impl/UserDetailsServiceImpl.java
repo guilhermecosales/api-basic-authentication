@@ -39,7 +39,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 account.getUsername(),
                 account.getPassword(),
                 account.isEnabled(),
-                account.isExpired(),
+                !account.isExpired(),
                 !account.isCredentialsExpired(),
                 !account.isLocked(),
                 authorities
